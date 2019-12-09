@@ -37,6 +37,7 @@ npm install babel-core rollup-plugin-babel rollup-plugin-commonjs
 
 speak "Installing package dependencies..."
 bower install
+bower install --save range-datepicker https://github.com/RoXuS/range-datepicker.git#0.0.31
 speak "Building and bundling Polymer project..."
 polymer build --bundle --js-minify --css-minify --html-minify
 
