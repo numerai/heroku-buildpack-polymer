@@ -25,9 +25,9 @@ fi
 
 speak "Installing NPM..."
 cd $BUILD_DIR
-NODE_DIR="node-v7.8.0-linux-x64"
+NODE_DIR="node-v8.0.0-linux-x64"
 NODE_TAR="$NODE_DIR.tar.gz"
-wget -nv https://nodejs.org/dist/v7.8.0/$NODE_TAR
+wget -nv https://nodejs.org/dist/v8.0.0/$NODE_TAR
 tar -zxf $NODE_TAR
 export PATH="$PATH:$BUILD_DIR/$NODE_DIR/bin"
 
