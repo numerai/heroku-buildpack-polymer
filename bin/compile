@@ -25,9 +25,9 @@ fi
 
 speak "Installing NPM..."
 cd $BUILD_DIR
-NODE_DIR="node-v7.8.0-linux-x64"
+NODE_DIR="node-v8.0.0-linux-x64"
 NODE_TAR="$NODE_DIR.tar.gz"
-wget -nv https://nodejs.org/dist/v7.8.0/$NODE_TAR
+wget -nv https://nodejs.org/dist/v8.0.0/$NODE_TAR
 tar -zxf $NODE_TAR
 export PATH="$PATH:$BUILD_DIR/$NODE_DIR/bin"
 
@@ -37,6 +37,7 @@ npm install babel-core rollup-plugin-babel rollup-plugin-commonjs
 
 speak "Installing package dependencies..."
 bower install
+bower install range-datepicker#0.0.31
 speak "Building and bundling Polymer project..."
 polymer build --bundle --js-minify --css-minify --html-minify
 
